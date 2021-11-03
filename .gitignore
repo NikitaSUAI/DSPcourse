@@ -1,3 +1,5 @@
 resources.7z
 env/
 .ipynb_checkpoints/
+/waves_yesno
+/waves_yesno.tar.gz
