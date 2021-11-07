@@ -2,7 +2,7 @@ import IPython.display
 import numpy as np
 import json
 
-def Audio(audio: np.ndarray, sr: int):
+def Audio(audio: np.ndarray, rate: int):
     """
     Use instead of IPython.display.Audio as a workaround for VS Code.
     `audio` is an array with shape (channels, samples) or just (samples,) for mono.
@@ -31,4 +31,4 @@ def Audio(audio: np.ndarray, sr: int):
             }
         </script>
         <button onclick="playAudio(%s, %s)">Play</button>
-    """ % (json.dumps(channels), sr))
+    """ % (json.dumps(channels), rate))
